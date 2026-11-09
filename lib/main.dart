@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
-import 'package:tictactoe_flutter/providers/game.dart';
 import 'package:tictactoe_flutter/providers/theme.dart';
 
 import 'dart:io';
@@ -29,10 +28,7 @@ void main() {
 
   runApp(
     MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => ThemeProvider()),
-        ChangeNotifierProvider(create: (_) => Game()),
-      ],
+      providers: [ChangeNotifierProvider(create: (_) => ThemeProvider())],
       child: const App(),
     ),
   );
