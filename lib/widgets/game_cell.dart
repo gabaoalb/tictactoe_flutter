@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tictactoe_flutter/models/game_entities.dart';
+import 'package:tictactoe_flutter/models/player_enum.dart';
 
 class GameCell extends StatelessWidget {
   final Player cellPlayer;

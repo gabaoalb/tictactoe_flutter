@@ -1,5 +1,8 @@
 import 'package:flutter/foundation.dart';
-import 'package:tictactoe_flutter/models/game_entities.dart';
+import 'package:tictactoe_flutter/models/game_result_enum.dart';
+import 'package:tictactoe_flutter/models/game_state.dart';
+import 'package:tictactoe_flutter/models/move_result.dart';
+import 'package:tictactoe_flutter/models/player_enum.dart';
 
 class GameViewModel with ChangeNotifier {
   final GameState _state = GameState();

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tictactoe_flutter/models/game_entities.dart';
+import 'package:tictactoe_flutter/models/game_result_enum.dart';
+import 'package:tictactoe_flutter/models/move_result.dart';
+import 'package:tictactoe_flutter/models/player_enum.dart';
 import 'package:tictactoe_flutter/providers/game.dart';
+import 'package:tictactoe_flutter/utils/game_error_utils.dart';
 
 class GameStatus extends StatefulWidget {
   const GameStatus({super.key});

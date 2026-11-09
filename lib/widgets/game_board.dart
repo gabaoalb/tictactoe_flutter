@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tictactoe_flutter/models/game_result_enum.dart';
+import 'package:tictactoe_flutter/models/player_enum.dart';
 
 import 'game_status.dart';
 import 'game_cell.dart';
@@ -6,7 +8,6 @@ import 'game_cell.dart';
 import 'dart:math';
 
 import 'package:provider/provider.dart';
-import 'package:tictactoe_flutter/models/game_entities.dart';
 import 'package:tictactoe_flutter/providers/game.dart';
 
 class GameBoard extends StatelessWidget {

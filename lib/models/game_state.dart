@@ -1,35 +1,7 @@
-enum Player { x, o, none }
-
-enum GameResult { win, draw, ongoing }
-
-sealed class MoveResult {}
-
-class ValidMove extends MoveResult {}
-
-class InvalidMove extends MoveResult {
-  final GameError error;
-  InvalidMove(this.error);
-}
-
-enum GameError {
-  gameNotOngoing,
-  noCurrentPlayer,
-  invalidCoordinates,
-  cellOccupied,
-}
-
-String gameErrorToString(GameError error) {
-  switch (error) {
-    case GameError.gameNotOngoing:
-      return 'O jogo não está em andamento';
-    case GameError.noCurrentPlayer:
-      return 'Não há jogador atual';
-    case GameError.invalidCoordinates:
-      return 'Coordenadas inválidas';
-    case GameError.cellOccupied:
-      return 'A célula já está ocupada';
-  }
-}
+import 'package:tictactoe_flutter/models/player_enum.dart';
+import 'package:tictactoe_flutter/models/game_result_enum.dart';
+import 'package:tictactoe_flutter/models/move_result.dart';
+import 'package:tictactoe_flutter/models/game_error_enum.dart';
 
 class GameState {
   List<List<Player>> _board;

@@ -55,12 +55,18 @@ lib/
 ├── main.dart                    # Inicialização, janela e provider de tema
 ├── app.dart                     # MaterialApp e aplicação do tema
 ├── models/
-│   └── game_entities.dart        # Estado, regras e tipos do jogo
+│   ├── game_state.dart           # Estado e regras da partida
+│   ├── player_enum.dart          # Jogadores e casa vazia
+│   ├── game_result_enum.dart     # Vitória, empate ou partida em andamento
+│   ├── game_error_enum.dart      # Motivos de recusa de uma jogada
+│   └── move_result.dart          # Jogada válida ou inválida
 ├── providers/
 │   ├── game.dart                 # GameViewModel
 │   └── theme.dart                # Preferência de tema
 ├── pages/
 │   └── main_page.dart            # Composição e escopo da partida
+├── utils/
+│   └── game_error_utils.dart     # Mensagens para os motivos de recusa
 └── widgets/
     ├── desktop_window_controls.dart
     ├── game_board.dart
